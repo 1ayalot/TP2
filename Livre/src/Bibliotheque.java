@@ -23,4 +23,17 @@ public class Bibliotheque {
             }
         }
     }
+    
+    public void rechercherLivreParAuteur(String nomAuteur) {
+        boolean found = false;
+        for (Livre livre : listeDeLivres) {
+            if (livre.auteur == nomAuteur) {
+                livre.afficherDetails();
+                found = true;
+            }
+        }
+        if (!found) {
+            System.out.println("Aucun livre trouvé pour l'auteur " + nomAuteur);
+        }
+    }
 }

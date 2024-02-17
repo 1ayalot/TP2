@@ -2,9 +2,9 @@
 public class Livre {
 	
 	//Attribut
-	private String titre;
-	private String auteur;
-	private int anneePublication;
+	public String titre;
+	public String auteur;
+	public int anneePublication;
 	 
 	// Constructeur
 	public Livre(String titre, String auteur, int anneePublication) {
